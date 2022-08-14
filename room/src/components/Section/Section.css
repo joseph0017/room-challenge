@@ -1,0 +1,185 @@
+.section {
+    display: grid;
+    margin: 0px 30px;
+    grid-template-columns: repeat(8, 1fr);
+    position: relative;
+}
+
+.section-text {
+    grid-column: 3 / 8;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2.3rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.section img {
+    display: inline-block;
+    max-width: 700px;
+}
+
+.shop-text h4 {
+    word-spacing: 10px;
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+
+.shop-text {
+    display: flex;
+}
+
+.subtitle-text{
+    font-weight: 100;
+    word-spacing: 5px;
+    font-size: small;
+    color: #636363;
+    line-height: 17px;
+}
+
+.bottom-arrow {
+    max-width: 100px;
+    max-height: 80px;
+    margin-top: 380px;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+}
+
+.arrow {
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: black; 
+    color: white; 
+    border: none;
+    padding: 19px;
+  }
+  
+  .button1:hover {
+    background-color: #636363;
+    color: white;
+  }
+
+
+.button2 {
+    background-color: black; 
+    color: white; 
+    border: none;
+    padding: 19px;
+  }
+  
+  .button2:hover {
+    background-color: #636363;
+    color: white;
+  }
+
+  @media screen and (max-width: 1024px) {
+      .section img {
+          max-width: 500px;
+          position: relative;
+      }
+    .bottom-arrow {
+        margin-top: 271px;
+        position: absolute;
+        margin-left: 500px;
+    }
+    .button1 {
+        padding: 10px;
+    }
+    .button2 {
+        padding: 10px;
+    }
+    .section-text {
+        margin-left: 40px;
+        grid-column: 3 / 9;
+    }
+    .title {
+        margin-top: -90px;
+    }
+
+  }
+  @media screen and (max-width: 770px) {
+      .section {
+          margin: 0px 0px;
+      }
+      .section img {
+          max-width: 400px;
+          position: relative;
+      }
+    .bottom-arrow {
+        margin-top: 213px;
+        position: absolute;
+        margin-left: 400px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    .subtitle-text {
+        font-size: 0.7rem;
+    }
+    .shop-text {
+        margin-bottom: 0;
+    }
+    .button1 {
+        padding: 7px;
+    }
+    .button2 {
+        padding: 7px;
+    }
+    .section-text {
+        margin-left: 40px;
+        grid-column: 3 / 9;
+    }
+    .title {
+        margin-top: -90px;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .section {
+        margin: 0px 0px;
+      }
+    .section img {
+        display: block;
+        max-width: 500px;
+        position: relative;
+    }
+    .shop-text {
+        margin-left: 10px;
+    }
+    .subtitle-text {
+        margin-left: 10px;
+    }
+    .bottom-arrow {
+        position: absolute;
+        margin-left: 388px;
+        margin-top: 263px;
+        align-items: center;
+    }
+    .section-text {
+    grid-column: 1 / 2;
+    max-width: 500px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.button1 {
+    padding: 16px;
+}
+.button2 {
+    padding: 16px;
+}
+  }

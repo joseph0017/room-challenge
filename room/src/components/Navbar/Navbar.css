@@ -1,0 +1,135 @@
+/*Desktop View*/
+.header {
+  grid-template-columns: repeat(12, 1fr);
+  position: absolute;
+  z-index: 1;
+}
+.nav-options {
+  display: flex;
+  list-style-type: none;
+  margin-left: 110px;
+  position: relative;
+}
+
+.logo-container {
+  cursor: pointer;
+  padding: 20px 20px;
+  list-style-type: none;
+  margin-left: 20px;
+  position: absolute;
+}
+.logo-container :hover {
+  border-bottom: 3px solid white;
+}
+
+.nav-options :hover {
+  border-bottom: 3px solid white;
+}
+
+.home {
+  padding: 20px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.about {
+  padding: 20px 20px;
+  cursor: pointer;
+  color: white;
+}
+.shop {
+  padding: 20px 20px;
+  cursor: pointer;
+  color: white;
+}
+.contact {
+  padding: 20px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+  @media (max-width: 500px) {
+    /*Mobile View */
+    .header {
+      position: relative;
+      margin-bottom: 20px;
+      padding: 0px 10px;
+    }
+    .logo {
+      width: 45px;
+      height: 45px;
+    }
+
+    .logo-container {
+      margin-left: 200px;
+    }
+    
+    .nav-options {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      margin-right: 40px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      list-style-type: none;
+    }
+    .nav-options.active {
+      position: fixed;
+      margin: 0px 0px ;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+
+    .home {
+      color: #000;
+      font-weight: 600;
+    }
+    .shop {
+      color: #000;
+      font-weight: 600;
+    }
+    .about {
+      color: #000;
+      font-weight: 600;
+    }
+    .contact {
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+  
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+      margin-top: 16px;
+      position: absolute;
+    }
+    .close-icon {
+      color: white;
+      width: 45px;
+      height: 45px;
+      z-index: 1;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vw;
+      padding: 30px 0px;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
